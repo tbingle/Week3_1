@@ -16,3 +16,8 @@ for (let i = 0; i < sales.length; i++) {
     totalSales += sales[i];    
 }
 console.log(`Total Sales: $${totalSales}`);//Log
+let stock = 10;//Inital stock price
+while (stock > 0) {
+    console.log (`Stock Remaining: ${stock}`);
+    stock--;//Decrease stock to 0 
+}
