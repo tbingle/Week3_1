@@ -39,3 +39,8 @@ for (const key in Employee) {
         console.log(`${key}: ${element}`);//Accuratly logs employee information in console 
     }
 }
+//Declare product array
+let products = ["Laptop", "Mouse","Keyboard"];
+for (let product of products) {
+    console.log(product);
+}
