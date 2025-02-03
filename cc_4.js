@@ -26,3 +26,16 @@ while (stock > 0) {
     responses++ 
     console.log(`Response Count: ${responses}`);
  } while (responses<3);//Survey responses
+
+ //Employee information
+ const Employee = {
+    Name: "John Mitch",
+    Position: "Manager",
+    Salary: "75000"
+};
+for (const key in Employee) {
+    if (Object.prototype.hasOwnProperty.call(Employee, key)) {
+        const element = Employee[key];
+        console.log(`${key}: ${element}`);//Accuratly logs employee information in console 
+    }
+}
