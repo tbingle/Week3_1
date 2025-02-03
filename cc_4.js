@@ -1,9 +1,9 @@
 //Inital Commit
 let purchaseAmount = 15;//Inital Price
-let discountPercentage = .1; //10% discount
+let discountPercentagee = .1; //10% discount
 let finalAmount;
 if (purchaseAmount> 100){
-    finalAmount= purchaseAmount - (purchaseAmount*discountPercentage);
+    finalAmount= purchaseAmount - (purchaseAmount*discountPercentagee);
 }//10% Discount
 else{
     finalAmount=purchaseAmount;
@@ -58,3 +58,13 @@ let amount = 106.45;
 let taxRate = 5;  
 let tax = calculateTax(amount, taxRate);
 console.log(`Tax on $${amount} at a rate of ${taxRate}% is: $${tax.toFixed(2)}`);
+
+// Function to apply discount
+let applyDiscount = function(price, discountPercentage){
+    let discountedPrice = price*(1- discountPercentage/ 100);
+    return discountedPrice;
+};
+let price = 239844;
+let discountPercentage = 23;
+let discountedPrice = applyDiscount(price, discountPercentage);
+console.log ( `Sticker price of $${price} with a ${discountPercentage}% discount is: $${discountedPrice.toFixed(2)}`);
