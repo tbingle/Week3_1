@@ -49,3 +49,12 @@ let orderID = [101,102,103];
 orderID.forEach(orderID => {
     console.log(`orderID: ${orderID}`);
 });
+// Function to calculate tax
+function calculateTax(amount, taxRate) {
+    let tax = amount * (taxRate / 100);
+    return tax;
+};
+let amount = 106.45; 
+let taxRate = 5;  
+let tax = calculateTax(amount, taxRate);
+console.log(`Tax on $${amount} at a rate of ${taxRate}% is: $${tax.toFixed(2)}`);
