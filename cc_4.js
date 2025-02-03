@@ -1,12 +1,12 @@
 //Inital Commit
-let purchaseAmount = 15;//Inital Price
+let purchaseAmountt = 15;//Inital Price
 let discountPercentagee = .1; //10% discount
 let finalAmount;
-if (purchaseAmount> 100){
-    finalAmount= purchaseAmount - (purchaseAmount*discountPercentagee);
+if (purchaseAmountt> 100){
+    finalAmount= purchaseAmountt - (purchaseAmountt*discountPercentagee);
 }//10% Discount
 else{
-    finalAmount=purchaseAmount;
+    finalAmount=purchaseAmountt;
 }//No discount
 console.log(`Final amount after discount: $${finalAmount}`);//Log
 
@@ -68,3 +68,13 @@ let price = 239844;
 let discountPercentage = 23;
 let discountedPrice = applyDiscount(price, discountPercentage);
 console.log ( `Sticker price of $${price} with a ${discountPercentage}% discount is: $${discountedPrice.toFixed(2)}`);
+
+//Loyalty Points
+let calculatePoints= (purchaseAmount) => {
+    let points = Math.floor(purchaseAmount / 10); 
+    return points;
+};
+let purchaseAmount = 85; 
+let pointsEarned = calculatePoints(purchaseAmount);
+
+console.log(`For spending $${purchaseAmount}, you earned ${pointsEarned} points.`);
