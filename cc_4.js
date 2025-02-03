@@ -21,3 +21,8 @@ while (stock > 0) {
     console.log (`Stock Remaining: ${stock}`);
     stock--;//Decrease stock to 0 
 }
+ let responses = 0;
+ do {
+    responses++ 
+    console.log(`Response Count: ${responses}`);
+ } while (responses<3);//Survey responses
